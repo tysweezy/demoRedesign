@@ -3,13 +3,9 @@
 *	v1.3.2
 */
 
-.owl-theme .owl-controls{
-	margin-top: 10px;
+.owl-theme .owl-controls > .owl-pagination{
+	/* margin-top: 10px; */
 	text-align: center;
-	float: right;
-	top: 0;
-	/* position: absolute; */
-	/* right: 0; */
 }
 
 /* Styling Next and Prev buttons */
@@ -28,6 +24,8 @@
 	background: #869791;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
+	position: absolute;
+
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
@@ -80,4 +78,20 @@
 .owl-item.loading{
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -21px;;
+  top: 25%;
+  background: url(../img/progArrow-6x12.svg) no-repeat;
+  width: 15px;
+  height: 15px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -27px;
+  top: 25%;
+  background: url(../img/nextArrow-6x12.svg) no-repeat;
+  /* width: 20px; */
+  height: 20px;
 }

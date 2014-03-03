@@ -116,7 +116,7 @@ html, body {
 
 	section.beacon-item { 
 		width: 90%;
-		margin-left: 2%;
+		margin-left: 4%;
 	
 		h1 {
 			
@@ -1147,49 +1147,25 @@ p.demo-description {
 			margin-left: 34px;
 		}
 
-		.banner .dots {
+
+	.owl-theme .owl-controls {
 			position: absolute;
-			left: 75%;
+			right: 0;
 			top: 0;
-			bottom: 20px;
-			list-style: none;
-			height: 0;
-
-		}
-
-		.banner .dots li {
-			content: "";
-			display: inline-block;
-			width: 10px;
-			height: 10px;
-			margin: 0 4px;
-			background: #333;
-			border-radius: 6px;
-			-webkit-border-radius: 6px;
-			opacity: .4;
-			text-indent: -999em;
-			cursor: pointer;
-			-webkit-transition: .5s, opacity, .5s;
-			transition: .5s, opacity, .5s;
 		}
 
 
-		.banner .dots li.active {
-			opacity: 1;
-			background: #333;
-		}
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0;
+  top: 125px;
+  background: url(../img/progArrow-6x12.svg) no-repeat;
+  width: 15px;
+  height: 15px; 
+}
 
-		.prev, .next {
-			position: absolute;
-			margin-top: 15%;
-			z-index: 1; 
-			font-size: 90%;
-			 
-		}
 
-		.next {
-			right: 10px;
-		}
+
+
 
 
 	/***Demo content -- tablet to small desktop displays***/
@@ -1447,7 +1423,19 @@ p.demo-description {
 		.owl-theme .owl-controls {
 			position: absolute;
 			right: 0;
+			top: 0;
 		}
+
+		.owl-theme .owl-controls .owl-buttons .owl-prev {
+			left: -920px !important;
+			top: 150px !important;
+		}
+
+		.owl-theme .owl-controls .owl-buttons .owl-next {
+		
+			top: 150px !important;
+		}
+
 
 
 

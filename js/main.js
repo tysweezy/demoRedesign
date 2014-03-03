@@ -85,23 +85,78 @@ $(document).ready(function () {
 
 
 	research.owlCarousel({
-		items: 1
+		items: 1,
+		navigation: true,
+		navigationText: false,
+		responsive: true,
+		responsiveRefreshRate: 200,
+		responsiveBaseWindow: window,
+		itemsDesktop: [1201, 1],
+		itemsDesktopSmall: [960, 1],
+		itemsTablet: [768, 1],
+		itemsTableSmall: false,
+		itemsMobile: [501, 1],
+		itemsScaleUp: false
 	});
 
 	build.owlCarousel({
-		items: 1
+		items: 1,
+		navigation: true,
+		navigationText: false,
+		responsive: true,
+		responsiveRefreshRate: 200,
+		responsiveBaseWindow: window,
+		itemsDesktop: [1201, 1],
+		itemsDesktopSmall: [960, 1],
+		itemsTablet: [768, 1],
+		itemsTableSmall: false,
+		itemsMobile: [501, 1],
+		itemsScaleUp: false
 	});
 
 	test.owlCarousel({
-		items: 1
+		items: 1,
+		navigation: true,
+		navigationText: false,
+		responsive: true,
+		responsiveRefreshRate: 200,
+		responsiveBaseWindow: window,
+		itemsDesktop: [1201, 1],
+		itemsDesktopSmall: [960, 1],
+		itemsTablet: [768, 1],
+		itemsTableSmall: false,
+		itemsMobile: [501, 1],
+		itemsScaleUp: false
 	});
 
 	distribute.owlCarousel({
-		items: 1
+		items: 1,
+		navigation: true,
+		navigationText: false,
+		responsive: true,
+		responsiveRefreshRate: 200,
+		responsiveBaseWindow: window,
+		itemsDesktop: [1201, 1],
+		itemsDesktopSmall: [960, 1],
+		itemsTablet: [768, 1],
+		itemsTableSmall: false,
+		itemsMobile: [501, 1],
+		itemsScaleUp: false
 	});
 
 	report.owlCarousel({
-		items: 1
+		items: 1,
+		navigation: true,
+		navigationText: false,
+		responsive: true,
+		responsiveRefreshRate: 200,
+		responsiveBaseWindow: window,
+		itemsDesktop: [1201, 1],
+		itemsDesktopSmall: [960, 1],
+		itemsTablet: [768, 1],
+		itemsTableSmall: false,
+		itemsMobile: [501, 1],
+		itemsScaleUp: false
 	});
 
 
