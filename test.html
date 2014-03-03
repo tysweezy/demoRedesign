@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>-->
+	<title></title>
+
+	<style>
+		
+		body {font-family: sans-serif;}
+
+		img {max-width: 100%;}
+
+		.container {width: 960px; margin: 0 auto;}
+
+		.banner {
+			
+			position: relative !important;
+			height: 357px !important; 
+			
+		}
+
+		.banner ul li {
+
+			list-style: none; 
+			display: block;
+			float: left;
+			width: 33%;
+		}
+
+		span {
+			margin-top: 75px;
+			float: right;
+			position: absolute;
+			color: #000;
+			width: 8%;
+			margin-left: 34px;
+		}
+
+		.banner .dots {
+			position: absolute;
+			left: 75%;
+			top: 0;
+			bottom: 20px;
+			list-style: none;
+
+		}
+
+		.banner .dots li {
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 4px;
+			/*border: 2px solid #333;*/
+			background: #333;
+
+			border-radius: 6px;
+			-webkit-border-radius: 6px;
+			opacity: .4;
+			text-indent: -999em;
+			cursor: pointer;
+			-webkit-transition: .5s, opacity, .5s;
+			transition: .5s, opacity, .5s;
+		}
+
+
+		.banner .dots li.active {
+			opacity: 1;
+			background: #333;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="container">
+
+
+<div class="banner">
+
+<a href="javascript:void(0);" class="unslider-arrow prev">Prev</a>
+<a href="javascript:void(0);" class="unslider-arrow next">Next</a>
+	<ul>
+		<li><img src="img/rh_demo.png"/> <span><strong>Some text</strong>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores minima dolorum sunt. Nulla, hic, mollitia, alias corporis molestiae illum quam perferendis fugiat delectus voluptates nihil sint tempore nostrum quisquam accusantium.</p>
+
+		</span></li>
+		
+
+		<li><img src="img/rh_demo.png"/> <span><strong>Slider Section 2</strong>
+			<p>This way your fielding methods can natrually imporve over time, and any onboarding researchers can quickly see which
+				methods are most effective.</p>
+		</span></li>
+		
+		<li><img src="img/rh_demo.png"/> <span><strong>Slider Section 3</strong>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, quod, in, explicabo, nemo ipsa architecto minima deserunt officiis quaerat vitae at dignissimos excepturi provident distinctio aliquam aspernatur saepe expedita dolore.</p>
+		</span></li>
+		<li><img src="img/rh_demo.png"/> <span><strong>View and compare project fielding data</strong>
+			<p>This way your fielding methods can natrually imporve over time, and any onboarding researchers can quickly see which
+				methods are most effective.</p>
+		</span></li>
+	</ul>
+
+</div>
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+<script type="text/javascript" src="js/jquery.event.move.js"></script>
+<script type="text/javascript" src="js/unslider.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+$('.banner').unslider({
+	complete : function () {},
+	keys : true,
+	dots : true,
+	fluid : true
+});
+
+
+var unslider = $('.banner').unslider();
+
+$('.unslider-arrow').click(function() {
+	var fn = this.className.split(' ')[1];
+
+	unslider.data('unslider')[fn]();
+});
+
+var slides = jQuery('.banner ul li');
+i = 0;
+
+slides.on('swipeleft', function(e) {
+	slides.eq(i + 1).addClass('active');
+}).on('swipright', function(e){
+	slides.eq(i - 1).addClass('active');
+});
+
+});
+
+var i = 0;
+while(i <= 10) {
+	console.log(i);
+	if (i === 10) {
+		console.log('Running');
+	}
+	i++;
+}
+
+var list = function() {
+	var list = new Array('random', 'int');
+	var data = document.getElementById('data');
+
+	if (data === list) {
+		console.log('hit');
+	} else {
+		console.log('miss');
+	}
+	console.log(list);
+
+
+};
+
+list();
+
+
+//get time
+//set interval
+//output
+
+//var date = new Date();
+
+
+/*var count = 0;
+var counter = setInterval('timer()', 1000)*/
+
+/*function timer() {
+	count = count + 1;
+
+	if (count >= count) {
+		clearInterval(counter);
+		console.log("Done");
+
+		return;
+	} else {
+		console.log(count);
+	}
+
+	console.log(count);
+}*/
+/*setInterval(t, 1000);
+t++*/
+
+
+
+</script>
+</body>
+</html>
