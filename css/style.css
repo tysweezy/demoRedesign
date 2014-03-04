@@ -253,8 +253,8 @@ body {
   }
   section.demo-item p.demo-txt {
     background: #c1d72e;
-    margin: -41px 0 0 10px;
     width: 85%;
+    margin: -41px 0 0 10px;
     padding: 20px 0 20px 10px;
   }
   section.demo-item li {
@@ -881,6 +881,7 @@ body {
   }
   #beaconLogo {
     margin-left: 75px;
+    margin-top: 35px;
   }
   .beacon-hero {
     height: 350px;
@@ -890,7 +891,7 @@ body {
   .beacon-hero h1 {
     text-align: center;
     line-height: 1.2em;
-    padding: 30px 0 10px 0;
+    padding: 24px 0 10px 0;
     font-family: Arial, sans-serif;
     font-weight: 500;
   }
@@ -906,7 +907,7 @@ body {
     line-height: 0em;
     margin-top: -16px;
     text-align: center;
-    padding: 1px 0 1px 0;
+    padding: 3px 0 1px 0;
   }
   .stickNav ul li {
     display: inline;
@@ -1125,12 +1126,13 @@ body {
   .beacon-hero h1 {
     text-align: center;
     line-height: 1.2em;
-    padding: 30px 0 10px 0;
+    padding: 24px 0 10px 0;
     font-family: Arial, sans-serif;
     font-weight: 500;
   }
   #beaconLogo {
     width: 40%;
+    margin-top: 35px;
   }
   #watchVideo {
     display: none;
@@ -1141,7 +1143,7 @@ body {
     line-height: 0em;
     text-align: center;
     margin-top: -16px;
-    padding: 1px 0 1px 0;
+    padding: 3px 0 1px 0;
   }
   .stickNav ul li {
     display: inline;
@@ -1237,7 +1239,7 @@ body {
   section.demo-item ul {
     margin-left: -36px;
   }
-  section.demo-item 7 ul li {
+  section.demo-item ul li {
     list-style: none;
     margin-bottom: 25px;
   }
@@ -1414,7 +1416,7 @@ height: 171px;*/
 
   /*float: right;*/
 
-  margin: -142px 0 0 58%;
+  margin: -190px 0 0 58%;
   position: relative;
 }
 /***Footer content style***/
@@ -1504,6 +1506,14 @@ select {
 }
 #heroVid iframe {
   width: 100%;
+}
+.description {
+  margin-left: 40px;
+  color: #333333;
+}
+.bottom-desc {
+  color: #444444;
+  line-height: 1.4em;
 }
 #dv-desc {
   color: #000;

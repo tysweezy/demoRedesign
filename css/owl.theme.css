@@ -49,8 +49,8 @@
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 4px;
 	background: #869791;
 }
