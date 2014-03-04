@@ -56,7 +56,7 @@ html, body {
 			line-height: 1.2em;
 			padding: 30px 0 10px 0;
 			/*font-family: 'Lustria', serif;*/
-			font-family: Arial, sans-serif; 
+			font-family: Arial, sans-serif;  
 			font-weight: 500;
 		}
 	}
@@ -235,48 +235,11 @@ html, body {
 			width: 100%;
 		}
 
-		.banner .dots {
-			position: absolute;
-			left: 28%;
-			top: -16px;
-			bottom: 50px; 
-			list-style: none;
-			height: 0;
-
-		}
-
-		.banner .dots li {
-			content: "";
-			display: inline-block;
-			width: 10px;
-			height: 10px;
-			margin: 0 4px;
-			background: #333;
-			border-radius: 6px;
-			-webkit-border-radius: 6px;
-			opacity: .4;
-			text-indent: -999em;
-			cursor: pointer;
-			-webkit-transition: .5s, opacity, .5s;
-			transition: .5s, opacity, .5s;
+	 .owl-next, .owl-prev {
+			display: none !important;
 		}
 
 
-		.banner .dots li.active {
-			opacity: 1;
-			background: #333;
-		}
-
-		.prev, .next {
-			position: absolute;
-			margin-top: 25%;
-			z-index: 1; 
-			font-size: 90%;
-		}
-
-		.next {
-			right: 0;
-		}
 
 
 	/*===================================================
@@ -629,6 +592,7 @@ p.demo-description {
 			margin-right: 2%;
 			position: relative;
 			height: 162px;
+			margin-bottom: 10px;
 
 		}
 
@@ -931,6 +895,7 @@ p.demo-description {
 			margin-right: 2%;
 			position: relative;
 			height: 162px;
+			margin-bottom: 10px;
 
 		}
 
@@ -1207,6 +1172,7 @@ p.demo-description {
 			margin-right: 2%;
 			position: relative;
 			height: 162px;
+			margin-bottom: 10px;
 
 		}
 
@@ -1477,6 +1443,7 @@ p.demo-description {
 			margin-right: 2%;
 			position: relative;
 			height: 162px;
+			margin-bottom: 10px;
 
 		}
 
@@ -1660,6 +1627,7 @@ nav {
 .footer {width: 100%; background: #dddddd; height: auto; margin-top: 100px; padding: 25px 0 25px 0;}
 section.beacon-item{padding-top: 25px;}
 
+
 #heroVid {
 background: #ccc;
 /*width: 300px;
@@ -1756,6 +1724,8 @@ select {
 }
 
 #heroVid {
+
+	border: 2px solid #2d2d2d;
 
 	iframe {
 		width: 100%;
