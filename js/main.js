@@ -160,6 +160,15 @@ $(document).ready(function () {
 	});
 
 
+	/***video placeholder script***/
+	$('#video-placeholder').click(function () {
+		var video = '<iframe width="400" height="225" src="' + $(this).attr('data-video') +'" frameborder="0" allowfullscreen></iframe>';
+		$(this).replaceWith(video);
+	});
+	
+
+
+
 }); //dom ready
 
 //Select dropdown menu
