@@ -136,28 +136,39 @@
 		</ul>
 	</section>-->
 
-	<ul class="dealion">
-		<a href="#"><li id="field-report">
+	<div class="dealion">
+		
+	  <div class="deal-item">
+		<a href="#"><div id="field-report">
 			<img src="img/data.jpg" alt="">
 			<p>Field Report</p>
-		</li></a>
+		</li></div>
+	 </div>
 
-		<a href="#"><li id="crosstabs">
+	<div class="deal-item">
+		<a href="#"><div id="crosstabs">
 			<img src="img/data.jpg" alt="">
 			<p>Crosstabs</p>
-		</li></a>
+		</li></div>
+	</div>
 
-		<a href="#"><li id="dashboards">
+
+	<div class="deal-item">
+		<a href="#"><div id="dashboards">
 			<img src="img/data.jpg" alt="">
 			<p>Dashboards</p>
-		</li></a>
+		</li></div>
+	</div>
 
-		<a href="#"><li id="exports">
+		
+	 <div class="deal-item">
+		<a href="#"><div id="exports">
 			<img src="img/data.jpg" alt="">
 			<p>Exports</p>
-		</li></a>
+		</li></div>
+	</div>
 
-	</ul>
+	</div>
 </div>
 
 
@@ -193,13 +204,20 @@
 	var demoStickyNavTop = $('.demo-stickNav').offset().top;
 
 	var demoStickyNav = function() {
-		var demoscrollTop = $(window).scrollTop();
 
+		var demoscrollTop = $(window).scrollTop();
+		
 		if(demoscrollTop > demoStickyNavTop) {
 			$('.demo-stickNav').addClass('demo-sticky');
+
+
+
+			
 		} else {
 			$('.demo-stickNav').removeClass('demo-sticky');
 		}
+
+	
 	};
 
 	demoStickyNav();

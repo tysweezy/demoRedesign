@@ -55,21 +55,31 @@ $(document).ready(function () {
 	***===============================================================*/
 	//var ids = new Array('researchhub', 'build', 'test', 'distribute', 'report');
 
+
+
 	$('a[href^="#"]').on('click', function (e) {
 	    e.preventDefault();
-
+	    
 	    $('a[href^="#"]').removeClass('active');
 	    $(this).addClass('active');
 
-	    var target = this.hash,
+		var target = this.hash,
 	    $target = $(target);
 
-	$('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
+	 var scrolldown = function(item, tuner) {
+		$('html, body').stop().animate({
+	        'scrollTop': $target.offset().top - tuner
 	        
 	    }, 500, 'swing', function () {
 	        window.location.hash = target;
 	    });
+
+  };
+
+	    scrolldown(target, "50");
+
+
+
 	});
 
 

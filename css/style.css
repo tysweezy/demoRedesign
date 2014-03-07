@@ -371,7 +371,7 @@ body {
   p.demo-description {
     margin-bottom: 55px;
   }
-  .dealion li {
+  .dealion > div > a > div {
     list-style: none;
     background-color: #c1d82f;
     padding: 2px;
@@ -379,12 +379,12 @@ body {
     display: block;
     margin: 5% 4% 10% 4%;
   }
-  .dealion p {
+  .dealion > div > a > p {
     padding: 5px;
     color: #fff;
     line-height: 0;
   }
-  .dealion li img {
+  .dealion > div > a > div img {
     width: 100%;
     height: auto;
   }
@@ -443,6 +443,7 @@ body {
   }
   #beaconLogo {
     width: 44%;
+    margin-top: 42px;
   }
   #watchVideo {
     display: none;
@@ -513,7 +514,7 @@ body {
     display: none !important;
   }
   #heroVid {
-    margin: -115px 0 0 48% !important;
+    margin: -140px 0 0 48% !important;
   }
   /*=============================================================
   		** BEGGINING OF TABLET STYLE  								 **
@@ -537,7 +538,7 @@ body {
   }
   section.demo-item {
     display: block;
-    padding-top: 50px;
+    margin-top: 50px;
   }
   section.demo-item ul {
     margin-left: -36px;
@@ -665,7 +666,7 @@ body {
   .data-item a {
     color: #ffffff;
   }
-  .dealion li {
+  .dealion > div > a > div {
     list-style: none;
     background-color: #c1d82f;
     padding: 2px;
@@ -673,12 +674,12 @@ body {
     display: block;
     margin: 5% 4% 10% 4%;
   }
-  .dealion p {
+  .dealion > div > a > p {
     padding: 5px;
     color: #fff;
     line-height: 0;
   }
-  .dealion li img {
+  .dealion > div > a > div img {
     width: 100%;
     height: auto;
   }
@@ -868,7 +869,7 @@ body {
   }
   section.demo-item {
     display: block;
-    padding-top: 50px;
+    margin-top: 50px;
   }
   section.demo-item ul {
     margin-left: -36px;
@@ -998,7 +999,7 @@ body {
   .data-item a {
     color: #ffffff;
   }
-  .dealion li {
+  .dealion > div > a > div {
     list-style: none;
     background-color: #c1d82f;
     padding: 2px;
@@ -1006,17 +1007,20 @@ body {
     display: block;
     margin: 5% 4% 10% 4%;
   }
-  .dealion p {
+  .dealion > div > a > p {
     padding: 5px;
     color: #fff;
     line-height: 0;
   }
-  .dealion li img {
+  .dealion > div > a > div img {
     width: 100%;
     height: auto;
   }
   .tablet-menu {
     display: none;
+  }
+  div.owl-wrapper-outer > div > div > div > img {
+    width: 100%;
   }
 }
 /***For laptops/desktops***/
@@ -1174,7 +1178,7 @@ body {
   }
   section.demo-item {
     display: block;
-    padding-top: 50px;
+    margin-top: 50px;
   }
   section.demo-item ul {
     margin-left: -36px;
@@ -1305,22 +1309,20 @@ body {
   .data-item a {
     color: #ffffff;
   }
-  .dealion li {
+  .dealion > div > a > div {
     list-style: none;
     background-color: #c1d82f;
     padding: 2px;
-    max-width: 100%;
-    /*display: inline-block;
-  	float: left;*/
-  
+    max-width: 90%;
+    display: block;
     margin: 5% 4% 10% 4%;
   }
-  .dealion p {
+  .dealion > div > a > p {
     padding: 5px;
     color: #fff;
     line-height: 0;
   }
-  .dealion li img {
+  .dealion > div > a > div img {
     width: 100%;
     height: auto;
   }
@@ -1492,7 +1494,7 @@ body {
   }
   section.demo-item {
     display: block;
-    padding-top: 50px;
+    margin-top: 50px;
   }
   section.demo-item ul {
     margin-left: -36px;
@@ -1629,22 +1631,20 @@ body {
   .data-item a {
     color: #ffffff;
   }
-  .dealion li {
+  .dealion > div > a > div {
     list-style: none;
     background-color: #c1d82f;
     padding: 2px;
-    max-width: 100%;
-    /*display: inline-block;
-  	float: left;*/
-  
+    max-width: 90%;
+    display: block;
     margin: 5% 4% 10% 4%;
   }
-  .dealion p {
+  .dealion > div > a > p {
     padding: 5px;
     color: #fff;
     line-height: 0;
   }
-  .dealion li img {
+  .dealion > div > a > div img {
     width: 100%;
     height: auto;
   }
@@ -1730,7 +1730,7 @@ nav a:hover {
   padding: 25px 0 25px 0;
 }
 section.beacon-item {
-  padding-top: 25px;
+  margin-top: 50px;
 }
 #heroVid {
   background: #ccc;
@@ -1860,6 +1860,9 @@ ul#social-buttons {
 }
 #contact-title a {
   color: #FFFFFF;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 #contact-title a:hover {
   text-decoration: underline;
@@ -1913,6 +1916,9 @@ ul#social-buttons {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccf235', endColorstr='#c1d72e', GradientType=0);
   /* IE6-9 */
 
+}
+.dealion > div > a {
+  color: #fff;
 }
 .clear {
   clear: both;
