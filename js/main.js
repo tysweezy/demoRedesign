@@ -53,10 +53,10 @@ $(document).ready(function () {
 	/*=================================================================
 	*** NAVIGATE TO ID ELEMENT
 	***===============================================================*/
-	//var ids = new Array('researchhub', 'build', 'test', 'distribute', 'report');
+	/*var scrollup = function(item, plus) {
 
-
-
+	};*/
+	
 	$('a[href^="#"]').on('click', function (e) {
 	    e.preventDefault();
 	    
@@ -68,6 +68,7 @@ $(document).ready(function () {
 
 	 var scrolldown = function(item, tuner) {
 		$('html, body').stop().animate({
+			// fixes scroll issue. (tuner)
 	        'scrollTop': $target.offset().top - tuner
 	        
 	    }, 500, 'swing', function () {
@@ -78,9 +79,7 @@ $(document).ready(function () {
 
 	    scrolldown(target, "50");
 
-
-
-	});
+});
 
 
 	/*====================================================================
