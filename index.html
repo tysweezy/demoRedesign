@@ -5,12 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<title>Decipher -- Demo Site</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	 
+	<!-- CSS production file -->
+	<link rel="stylesheet" href="css/production.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/sprites/sprites.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.theme.css"/>
-	
 	<link href='http://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
@@ -18,7 +16,7 @@
 		<script type="text/javascript" src="js/polyfill/html5shiv.js"></script>
 		<script type="text/javascript" src="js/polyfill/respond.min.js"></script>
 	<![endif]-->
-
+<!-- google analytics-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -107,7 +105,9 @@
 
 		<div id="heroVid">
 			<!-- video embed will go here -->
-			<iframe width="400" height="225" src="//www.youtube.com/embed/0coW8FOFNLg?rel=0&modestbranding=1&theme=light" frameborder="0" allowfullscreen></iframe>
+			<!--<iframe width="400" height="225" src="//www.youtube.com/embed/0coW8FOFNLg?rel=0&modestbranding=1&theme=light" frameborder="0" allowfullscreen></iframe>-->
+
+			<img id="video-placeholder" src="img/video-screenshot.jpg" data-video="//www.youtube.com/embed/0coW8FOFNLg?rel=0&modestbranding=1&autoplay=1&theme=light" alt="Video"/>
 		</div>
 	</div>
 		
@@ -125,6 +125,7 @@
 			<li><a href="#report">Report</a></li>
 
 		</ul>	
+
 
 		<a id="moveTop" href="#top"><img src="img/jumpToTop-20x20.svg" alt="Move To Top"/></a>
 
@@ -404,34 +405,31 @@
 <!-- FOOTER -->
 <footer class="footer">
 	<div class="container">
+	<div id="footer-info">
+		
+		<object id="logo" data="img/logo_Decipher-footer.svg" type="image/svg+xml"></object>
 
-		<div id="d-card">
-			<!-- logo -->
+		<h2 id="foot-slogan">We do data differently</h2>
+		<h3 id="contact-title"><a href="https://www.decipherinc.com/n/contact">Contact us</a></h3>
 
-			<img src="img/logo.png" alt="Decipher Logo" width="135"/>
-			<h3>We do data differently</h3>
-
-			<p>Phone: 800.923.5523</p> 
-			<p><a href="mailto:info@decipherinc.com">info@decipherinc.com</a></p>
+		<ul id="social-buttons">
 			
-		</div>
-
-		<div id="rep">
-			<h4><span>Like what you see?</span> Give us a call!</h4>
-			<p>We can anwser any questions you have and talk about options</p>
-
-			<a class="btn-lg" href="https://www.decipherinc.com/n/contact">Talk to a Representative</a>
-
-
-		</div>
+			<li><a href="https://www.facebook.com/decipherinc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g><path fill="#FFFFFF" d="M19.9 3.8v12.4c0 1-0.4 1.9-1.1 2.6c-0.7 0.7-1.6 1.1-2.6 1.1H3.8c-1 0-1.9-0.4-2.6-1.1 c-0.7-0.7-1.1-1.6-1.1-2.6V3.8c0-1 0.4-1.9 1.1-2.6c0.7-0.7 1.6-1.1 2.6-1.1h12.4c1 0 1.9 0.4 2.6 1.1C19.5 1.9 19.9 2.8 19.9 3.8z M16.9 10.3l0.3-2.8h-2.6V6.1c0-0.4 0.1-0.7 0.2-0.9C15 5 15.3 4.9 15.8 4.9h1.4V2.1H15c-1.3 0-2.2 0.3-2.8 0.9 c-0.6 0.6-0.9 1.5-0.9 2.7v1.7H9.6v2.8h1.7v8.2h3.4v-8.2H16.9z"/></g></svg></a></li>
+			
+			<li><a href="https://twitter.com/deciphertweets"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g><path fill="#FFFFFF" d="M20 3.8c-0.6 0.8-1.3 1.5-2.1 2.1c0 0.1 0 0.3 0 0.5c0 1.1-0.2 2.2-0.5 3.3c-0.3 1.1-0.8 2.1-1.5 3.2 c-0.7 1-1.4 1.9-2.3 2.7c-0.9 0.8-2 1.4-3.3 1.9c-1.3 0.5-2.6 0.7-4.1 0.7c-2.3 0-4.4-0.6-6.3-1.8c0.3 0 0.6 0.1 1 0.1 c1.9 0 3.6-0.6 5.1-1.8c-0.9 0-1.7-0.3-2.4-0.8c-0.7-0.5-1.2-1.2-1.4-2c0.3 0 0.5 0.1 0.8 0.1c0.4 0 0.7 0 1.1-0.1 c-0.9-0.2-1.7-0.7-2.4-1.4C1.1 9.5 0.8 8.6 0.8 7.6V7.6C1.4 7.9 2 8.1 2.7 8.1c-0.6-0.4-1-0.9-1.3-1.5C1 6 0.8 5.4 0.8 4.7 c0-0.7 0.2-1.4 0.6-2.1c1 1.3 2.3 2.3 3.7 3c1.5 0.8 3 1.2 4.7 1.3C9.8 6.6 9.8 6.3 9.8 6c0-1.1 0.4-2.1 1.2-2.9 c0.8-0.8 1.8-1.2 2.9-1.2c1.2 0 2.2 0.4 3 1.3c0.9-0.2 1.8-0.5 2.6-1c-0.3 1-0.9 1.7-1.8 2.3C18.4 4.4 19.2 4.1 20 3.8z"/></g></svg></a></li>
+		</ul>
+		
 
 	</div>
+
+</div>
 
 </footer>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/plugins/owl.carousel.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/plugins/owl.carousel.min.js"></script>
+<!-- production javascript -->
+<script type="text/javascript" src="js/production.min.js"></script>
 
 </body>
 </html>

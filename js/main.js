@@ -53,24 +53,33 @@ $(document).ready(function () {
 	/*=================================================================
 	*** NAVIGATE TO ID ELEMENT
 	***===============================================================*/
-	//var ids = new Array('researchhub', 'build', 'test', 'distribute', 'report');
+	/*var scrollup = function(item, plus) {
 
+	};*/
+	
 	$('a[href^="#"]').on('click', function (e) {
 	    e.preventDefault();
-
+	    
 	    $('a[href^="#"]').removeClass('active');
 	    $(this).addClass('active');
 
-	    var target = this.hash,
+		var target = this.hash,
 	    $target = $(target);
 
-	$('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
+	 var scrolldown = function(item, tuner) {
+		$('html, body').stop().animate({
+			// fixes scroll issue. (tuner)
+	        'scrollTop': $target.offset().top - tuner
 	        
 	    }, 500, 'swing', function () {
 	        window.location.hash = target;
 	    });
-	});
+
+  };
+
+	    scrolldown(target, "50");
+
+});
 
 
 	/*====================================================================
@@ -158,6 +167,15 @@ $(document).ready(function () {
 		itemsMobile: [501, 1],
 		itemsScaleUp: false
 	});
+
+
+	/***video placeholder script***/
+	$('#video-placeholder').click(function () {
+		var video = '<iframe width="400" height="225" src="' + $(this).attr('data-video') +'" frameborder="0" allowfullscreen></iframe>';
+		$(this).replaceWith(video);
+	});
+	
+
 
 
 }); //dom ready
