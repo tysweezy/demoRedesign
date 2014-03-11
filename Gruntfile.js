@@ -4,7 +4,11 @@ module.exports = function(grunt) {
 		concat : {
 			css : {
 				src : [
-					'css/*'
+					'css/normalize.css',
+					'css/style.css',
+					'css/owl.theme.css',
+					'css/owl.transitions.css',
+					'css/owl.carousel.css'
 				],
 
 				dest : 'css/production.css'
@@ -12,12 +16,14 @@ module.exports = function(grunt) {
 
 			js : {
 				src : [
-					'js/main.js'
+					'js/main.js',
+					'js/slider.js'
 				],
 
 				dest : 'js/production.js'
 			}
 		},
+		
 		cssmin : {
 			css : {
 				src : 'css/production.css',
@@ -28,10 +34,14 @@ module.exports = function(grunt) {
 		uglify : {
 			js : {
 				files : {
-					'js/production.min.js' : ['js/production.js'],
-					'js/unslider.min.js' : ['js/unslider.js']
+					'js/production.min.js' : ['js/production.js']
 				}
 			}
+		},
+
+		watch : {
+			files: ['css/*', 'js/*'],
+			tasks: ['concat', 'cssmin', 'uglify']
 		},
 	});
 
@@ -41,5 +51,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.registerTask('default', ['concat:css', 'cssmin:css',
 		'concat:js', 'uglify:js']);
+
+
 
 };
