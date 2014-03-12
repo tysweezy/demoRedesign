@@ -299,7 +299,7 @@ body {
   ** Data Visualization Page Style
   **=====================================================**/
   .hero-unit {
-    height: 300px;
+    height: 287px;
     width: 100%;
     /*background: url(../img/cta-data.jpg) no-repeat;
   	position: relative;
@@ -1220,6 +1220,11 @@ body {
     transition: border .2s ease;
   }
   section.demo-item li:hover {
+    /*border: 5px solid #d2e936;*/
+  
+    border: 5px solid #c1d72e;
+  }
+  section.demo-item li:focus {
     border: 5px solid #d2e936;
   }
   section.demo-item h1 {
@@ -1552,6 +1557,11 @@ body {
   section.demo-item li:hover {
     border: 5px solid #d2e936;
   }
+  section.demo-item li:focus {
+    /*border: 5px solid #d2e936;*/
+  
+    border: 5px solid #c1d72e;
+  }
   section.demo-item h1 {
     font-weight: 100;
     margin-left: 10px;
@@ -1767,7 +1777,7 @@ nav a:hover {
   width: 100%;
   background: #656766;
   height: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 25px 0 25px 0;
 }
 section.beacon-item {
