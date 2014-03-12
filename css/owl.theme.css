@@ -3,7 +3,7 @@
 *	v1.3.2
 */
 
-.owl-theme .owl-controls > .owl-pagination{
+.owl-theme .owl-controls > .owl-pagination {
 	/* margin-top: 10px; */
 	text-align: center;
 }
@@ -51,7 +51,7 @@
 	opacity: 0.5;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	border-radius: 4px;
+	border-radius: 50%;
 	background: #869791;
 }
 
