@@ -51,7 +51,8 @@ body {
     width: 100%;
   }
   .beacon-hero {
-    height: 430px;
+    /*height: 430px; */
+  
     width: 100%;
     /*background: #569ad5;*/
     /*background: #569ad5 url(../img/cta_background.png) repeat-x;*/
@@ -118,6 +119,7 @@ body {
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
+    margin-bottom: 12%;
   }
   /***Add before to #watchVideo for the play button***/
   #watchVideo:before {
@@ -717,6 +719,11 @@ body {
     display: block;
     height: 37px;
   }
+  span.beacon-title {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 7px;
+  }
 }
 /***For tablets to smaller displays***/
 @media (min-width: 769px) and (max-width: 959px) {
@@ -1026,6 +1033,11 @@ body {
   div.owl-wrapper-outer > div > div > div > img {
     width: 100%;
   }
+  span.beacon-title {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 7px;
+  }
 }
 /***For laptops/desktops***/
 @media (min-width: 960px) and (max-width: 1200px) {
@@ -1201,6 +1213,14 @@ body {
     position: relative;
     height: 162px;
     margin-bottom: 20px;
+    -webkit-transition: border .2s ease;
+    -moz-transition: border .2s ease;
+    -o-transition: border .2s ease;
+    -ms-transition: border .2s ease;
+    transition: border .2s ease;
+  }
+  section.demo-item li:hover {
+    border: 5px solid #d2e936;
   }
   section.demo-item h1 {
     font-weight: 100;
@@ -1333,6 +1353,11 @@ body {
   }
   .tablet-menu {
     display: none;
+  }
+  span.beacon-title {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 7px;
   }
 }
 /***For larger displays***/
@@ -1518,14 +1543,14 @@ body {
     position: relative;
     height: 162px;
     margin-bottom: 20px;
-    -webkit-transition: border .5s ease;
-    -moz-transition: border .5s ease;
-    -o-transition: border .5s ease;
-    -ms-transition: border .5s ease;
-    transition: border .5s ease;
+    -webkit-transition: border .2s ease;
+    -moz-transition: border .2s ease;
+    -o-transition: border .2s ease;
+    -ms-transition: border .2s ease;
+    transition: border .2s ease;
   }
   section.demo-item li:hover {
-    border: 2px solid #d2e936;
+    border: 5px solid #d2e936;
   }
   section.demo-item h1 {
     font-weight: 100;
@@ -1661,6 +1686,11 @@ body {
   }
   .tablet-menu {
     display: none;
+  }
+  span.beacon-title {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 7px;
   }
 }
 /*==========================================================================
